@@ -1,7 +1,7 @@
 # Site settings
 #theme: default
 title: FAEST digital signature algorithm
-email: faest.team@gmail.com
+email: faest.authors@gmail.com
 baseurl: "/"
 url: "https://faest-sign.github.io"
 

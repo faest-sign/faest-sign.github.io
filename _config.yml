@@ -1,0 +1,15 @@
+# Site settings
+#theme: default
+title: FAEST digital signature algorithm
+email: faest.team@gmail.com
+baseurl: "/"
+url: "https://faest-sign.github.io"
+
+# For navigation bar in default layout
+pages_list:       
+#  About: '/about'
+  Resources: '/resources'
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

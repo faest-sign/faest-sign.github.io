@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Auhors"
+title: "Chefs"
 ---
 
 The kitchen of this FAEST is manned by, in alphabetical order:

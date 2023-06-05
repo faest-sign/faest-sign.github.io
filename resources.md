@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Resources"
+title: "Recipes"
 ---
 
 Spec
@@ -8,4 +8,5 @@ Spec
 NIST submission
 
 Papers
- - Crypto paper
+
+- Crypto paper

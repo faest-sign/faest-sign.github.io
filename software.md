@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Software"
+title: "Dishes"
 ---
 
 Reference implementation in C
@@ -8,5 +8,5 @@ Reference implementation in C
 AVX2 in C
 
 Rust
- - (older version, uses different primitives and is incompatible with spec)
 
+- (older version, uses different primitives and is incompatible with spec)

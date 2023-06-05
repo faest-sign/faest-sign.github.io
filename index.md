@@ -6,5 +6,8 @@ title: "Resources"
 Come join the FAEST!
 
 Pages
- - [Resources](resources)
- - [Software](software)
+
+- [Reception](index)
+- [Recipes](resources)
+- [Dishes](software)
+- [Chefs](authors)

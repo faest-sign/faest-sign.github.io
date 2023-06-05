@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Come join the FAEST"
+title: "Come and join the FAEST"
 ---
 
 Pages

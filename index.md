@@ -1,9 +1,7 @@
 ---
-layout: page
-title: "Resources"
+layout: home
+title: "Come join the FAEST"
 ---
-
-Come join the FAEST!
 
 Pages
 

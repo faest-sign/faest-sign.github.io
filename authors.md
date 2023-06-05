@@ -13,6 +13,6 @@ The kitchen of this FAEST is manned by, in alphabetical order:
 - Shibam Mukherjee
 - Sebastian Ramacher
 - Christian Rechberger
-- Emmanuela Orisini
+- Emmanuela Orsini
 - Lawrence Roy
 - Peter Scholl

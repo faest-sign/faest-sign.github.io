@@ -12,6 +12,7 @@ github_username: faest-sign
 
 # Pages in the navigation bar, in order:
 header_pages:
+  - components.md
   - resources.md
   - software.md
   - authors.md

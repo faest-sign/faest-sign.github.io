@@ -3,9 +3,7 @@ layout: home
 title: "Come and join the FAEST"
 ---
 
-Pages
-
-- [Reception](index)
+- [Ingredients](components)
 - [Recipes](resources)
 - [Dishes](software)
 - [Chefs](authors)

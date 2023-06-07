@@ -1,0 +1,27 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.site-header {
+    border-top: 5px solid rgb(25,0,212);
+}
+
+.site-title {
+    font-size: 32px;
+    letter-spacing: 0px;
+}
+
+.site-title::before {
+    content: url("/assets/faest-logo.svg");
+    display: inline;
+    position: relative;
+    margin-right: 10px;
+    width: 35px;
+    top: 3px;
+}
+
+// .site-nav {
+//     line-height: 120px;
+// }

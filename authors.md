@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Chefs"
+subtitle: "Authors"
 ---
 
 The kitchen of this FAEST is manned by, in alphabetical order:

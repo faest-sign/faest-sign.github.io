@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Dishes"
+subtitle: "Software"
 ---
 
 Reference implementation in C

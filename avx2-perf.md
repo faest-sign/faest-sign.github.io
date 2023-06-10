@@ -2,8 +2,8 @@
    START GENERATED TABLE
 {% endcomment %}
 |---
-| : Scheme : |  : Runtimes in milliseconds :  \|\||             : Sizes in bytes :             \|\|
-| ^^         | : KeyGen : | : Sign : | : Verify : | : Secret Key : | : Public Key : | : Signature :
+| : Scheme : |  : Runtimes in milliseconds :  \|\||  : Sizes in bytes :  \|\|
+| ^^         | : KeyGen : | : Sign : | : Verify : | : sk : | : pk : | : sig :
 |:-|-:|-:|-:|-:|-:|-:
 | FAEST-128s       |   0.000641 |         8.096220 |         8.096920 | 32 | 32 |  5006
 | FAEST-128f       |   0.000638 |         0.873933 |         0.868901 | 32 | 32 |  6336

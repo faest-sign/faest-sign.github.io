@@ -6,3 +6,5 @@ gem "jekyll", "~> 3.9.3"
 # required for jekyll >= 3
 gem "webrick", "~> 1.7"
 gem "minima"
+
+gem "jekyll-spaceship", group: :jekyll_plugins

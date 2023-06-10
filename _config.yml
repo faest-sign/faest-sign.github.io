@@ -9,6 +9,7 @@ description: >-
 baseurl: "/"
 url: "https://faest-sign.github.io"
 github_username: faest-sign
+repository: faest-sign/faest-sign.github.io
 
 # Pages in the navigation bar, in order:
 header_pages:
@@ -21,3 +22,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-spaceship

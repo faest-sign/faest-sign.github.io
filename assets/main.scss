@@ -9,6 +9,7 @@
 }
 
 .site-title {
+    margin-top: 10px;
     font-size: 32px;
     letter-spacing: 0px;
 }
@@ -29,7 +30,9 @@
 // Making the nav bar links look the way they do
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 10px;
     padding: 0;
 }
 nav ul li {
@@ -37,12 +40,12 @@ nav ul li {
 }
 nav ul li a {
     display: block;
-    padding: 10px 10px;
+    padding: 5px 5px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: medium;
     color: #000;
 }
 nav ul li a span {
     display: block;
-    font-size: 16px;
+    font-size: small;
 }

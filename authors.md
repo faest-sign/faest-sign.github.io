@@ -6,7 +6,7 @@ subtitle: "Authors"
 
 The kitchen of this FAEST is manned by, in alphabetical order:
 
-- [Carsten Baum](https://carstenbaum.com/) (Aarhus University)
+- [Carsten Baum](https://carstenbaum.com/) (DTU, Aarhus University)
 - Lennart Braun (Aarhus University)
 - [Cyprien Delpech de Saint Guilhem](https://www.esat.kuleuven.be/cosic/people/cyprien-delpech-de-saint-guilhem/) (KU Leuven)
 - Michael Klooß (Aalto University)

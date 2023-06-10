@@ -16,6 +16,8 @@ The Zero-Knowledge proof system used for FAEST is based on a new design called V
 
 For 128 bit security, our optimized implementation of FAEST can sign or verify in 0.9 milliseconds (for signatures of size 6.5 kilobytes) or 8.1 milliseconds (for signatures of size 5 kilobytes). When using AES in Even-Mansour mode, signature size can be further reduced to 4.6 kilobytes.
 
+{% include_relative avx2-perf.md %}
+
 ## Contact
 
 If you want to contact us, please send an e-mail to [faest.authors@gmail.com](mailto://faest.authors@gmail.com)

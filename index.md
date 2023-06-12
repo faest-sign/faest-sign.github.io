@@ -16,7 +16,7 @@ FAEST does not need stronger cryptographic hardness assumptions like LWE, CSIDH,
 
 ## Performance
 
-For 128-bit security, our optimized implementation of FAEST can sign or verify in 0.9 milliseconds (for signatures of size 6.5 kilobytes) or 8.1 milliseconds (for signatures of size 5 kilobytes). When using AES in Even-Mansour mode, signature size can be further reduced to 4.6 kilobytes. Here are the benchmarks for our [AVX2](/software.html) implementation.
+For 128-bit security, our optimized implementation of FAEST can sign or verify in 0.9 milliseconds (for signatures of size 6.5 kilobytes) or 8.1 milliseconds (for signatures of size 5 kilobytes). When using AES in Even–Mansour mode, signature size can be further reduced to 4.6 kilobytes. Here are the benchmarks for our [AVX2](/software.html) implementation.
 
 {% include_relative avx2-perf.md %}
 

@@ -4,7 +4,7 @@ title: "Come and join the FAEST"
 ---
 
 FAEST is a digital signature algorithm designed to be secure against quantum computers.
-The security of FAEST is based on standard cryptographic hash functions (SHA3) and the AES cipher. 
+The security of FAEST is based on standard cryptographic hash functions (SHAKE) and the [AES][aes_spec] block cipher.
 
 ## Design philosophy
 
@@ -14,10 +14,12 @@ The Zero-Knowledge proof system used for FAEST is based on a new design called V
 
 ## Performance
 
-For 128 bit security, our optimized implementation of FAEST can sign or verify in 0.9 milliseconds (for signatures of size 6.5 kilobytes) or 8.1 milliseconds (for signatures of size 5 kilobytes). When using AES in Even-Mansour mode, signature size can be further reduced to 4.6 kilobytes.
+For 128 bit security, our optimized implementation of FAEST can sign or verify in 0.9 milliseconds (for signatures of size 6.5 kilobytes) or 8.1 milliseconds (for signatures of size 5 kilobytes). When using AES in Even-Mansour mode, signature size can be further reduced to 4.6 kilobytes. Here are the benchmarks for our [AVX2](/software.html) implementation.
 
 {% include_relative avx2-perf.md %}
 
 ## Contact
 
 If you want to contact us, please send an e-mail to [faest.authors@gmail.com](mailto://faest.authors@gmail.com)
+
+{% include_relative references.md %}

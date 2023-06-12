@@ -16,3 +16,5 @@ The kitchen of this FAEST is manned by, in alphabetical order:
 - [Christian Rechberger](https://www.iaik.tugraz.at/person/christian-rechberger/) (TU Graz)
 - [Lawrence Roy](https://ldr709.gitlab.io/) (Aarhus University)
 - [Peter Scholl](https://pascholl.github.io/) (Aarhus University)
+
+{% include_relative references.md %}

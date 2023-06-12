@@ -3,14 +3,23 @@ layout: page
 title: "Dishes"
 ---
 
-Reference implementation in C
+The benchmark numbers below were collected on a consumer notebook with an AMD Ryzen 7 5800H processor, with a base clock speed of 3.2 GHz and 16 GB memory.
+Simultaneous Multi-Threading and Precision Boost were enabled.
+The computer was running Linux 6.1.30, and the implementations were compiled with GCC 12.2.1.
+
+C
+
+- Reference [implementation][faest_ref_impl].
 
 {% include_relative ref-perf.md %}
 
-AVX2 in C
+- x86-64 [implementation][faest_avx_impl] with AVX2, AES-NI, and other ISA extensions.
 
 {% include_relative avx2-perf.md %}
 
 Rust
 
-- (older version, uses different primitives and is incompatible with spec)
+- [Implementation][vith_crypto_impl] for our Crypto 2023 [paper][vith_crypto].
+  Note that this is for an older version of our protocol, which uses different primitives and is incompatible with the specification.
+
+{% include_relative references.md %}

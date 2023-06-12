@@ -4,13 +4,15 @@ title: "Come and join the FAEST"
 ---
 
 FAEST is a digital signature algorithm designed to be secure against quantum computers.
-The security of FAEST is based on standard cryptographic hash functions (SHAKE) and the [AES][aes_spec] block cipher.
+The security of FAEST is based on standard cryptographic hashes and ciphers, specifically [SHA3][sha3_spec] and [AES][aes_spec], which are believed to remain secure against quantum adversaries.
 
-## Design philosophy
+## Design
 
-In FAEST, the secret signing key is an AES key, while the public verification key is a plaintext-ciphertext pair (obtained by encrypting a random message under the signing key). A signature consists of a non-interactive zero-knowledge proof of knowledge of the AES key. This follows the design principle of the [Picnic signature scheme](https://github.com/Microsoft/Picnic/), except using AES as a one-way function instead of LowMC.
+In FAEST, the secret signing key is an AES key, while the public verification key is a plaintext-ciphertext pair, obtained by encrypting a random message under the signing key. A signature consists of a non-interactive zero-knowledge proof of knowledge of the AES key which maps the message to the ciphertext. This follows the design principle of the [Picnic signature scheme][picnic], except using the well-analyzed AES cipher as a one-way function instead of LowMC.
 
-The zero-knowledge proof system used for FAEST is based on a new design called VOLE-in-the-head, which is inspired by the established MPC-in-the-head paradigm. VOLE-in-the-head allows for a faster implementation with smaller proofs than previous approaches. Since the security of the proof system itself also only relies on the security of symmetric key cryptography such as hash functions and the AES cipher, no other cryptographic hardness assumptions (LWE, CSIDH, syndrome decoding, ...) are needed.
+FAEST's efficiency results from a new zero-knowledge proof technique called VOLE-in-the-head, which improves upon the established MPC-in-the-head paradigm.
+VOLE-in-the-head allows for a faster implementation with smaller proofs than previous approaches, while still requiring only symmetric-key primitives like SHA3 and AES.
+FAEST does not need stronger cryptographic hardness assumptions like LWE, CSIDH, syndrome decoding, etc.
 
 ## Performance
 

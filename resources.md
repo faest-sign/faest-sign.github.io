@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Recipes"
-subtitle: "Documentation"
+subtitle: "Documents"
 ---
 
 Specification:

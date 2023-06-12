@@ -3,7 +3,7 @@
 [faest_ref_impl]: https://github.com/faest-sign/faest-ref
 [quicksilver]: https://eprint.iacr.org/2021/076
 [submission_1]: https://github.com/faest-sign/faest-sign.github.io/releases/download/v1.0/nist-submission-v1.zip
-[spec_1_0]: /TODO.pdf
+[spec_1_0]: /faest-spec-v1.0.pdf
 [spec_1_1]: /TODO.pdf
 [vith_crypto]: https://eprint.iacr.org/2023/TODO
 [vith_crypto_impl]: https://github.com/lenerd/homcomzk

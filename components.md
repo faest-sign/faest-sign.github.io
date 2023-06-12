@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Ingredients"
+subtitle: "Components"
 ---
 
 Ingredients for the FAEST:

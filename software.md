@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Dishes"
+subtitle: "Software"
 ---
 
 The benchmark numbers below were collected on a consumer notebook with an AMD Ryzen 7 5800H processor, with a base clock speed of 3.2 GHz and 16 GB memory.

@@ -20,10 +20,8 @@ Ingredients for the FAEST:
 
 3. [VOLE-in-the-Head][vith_crypto]
 
-	<p>
 	<img src="/assets/vith.png" alt="A vole in the head of a person" style="float:right;width:20%;">
 	QuickSilver (and other VOLE-based ZK proof systems) use an LPN-based preprocessing stage to generate the VOLE correlations between prover and verifier in a preprocessing phase. Unfortunately, it is currently not known how to instantiate these VOLE correlation generators based on LPN such that the prover's share of the VOLE correlations can be generated without a secret state of the verifier. FAEST differs from previous works by using a protocol from the [SoftSpokenVOLE][ssot] to generate VOLE correlations. SoftSpokenVOLE achieves this using Random Oblivious Transfers (ROTs) as starting point, and FAEST  modifies it such that the generated VOLE correlations have parameters for which the QuickSilver ZK proof has good soundness. Since the resulting proof system bears resemblance with MPC-in-the-Head, we call this approach VOLE-in-the-Head.
-	</p>
 
 4. A pinch of salt
 

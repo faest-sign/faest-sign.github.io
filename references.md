@@ -1,11 +1,16 @@
 [aes_spec]: https://doi.org/10.6028/NIST.FIPS.197-upd1
+[banquet]: https://eprint.iacr.org/2021/068
+[bbq]: https://eprint.iacr.org/2019/781
+[commit_extend]: https://eprint.iacr.org/2018/983
 [faest_avx_impl]: https://github.com/faest-sign/faest-avx
 [faest_ref_impl]: https://github.com/faest-sign/faest-ref
+[limbo]: https://eprint.iacr.org/2021/215
 [picnic]: https://github.com/Microsoft/Picnic/
 [quicksilver]: https://eprint.iacr.org/2021/076
 [submission_1]: https://github.com/faest-sign/faest-sign.github.io/releases/download/v1.0/nist-submission-v1.zip
 [sha3_spec]: https://doi.org/10.6028/NIST.FIPS.202
 [spec_1_0]: /faest-spec-v1.0.pdf
 [spec_1_1]: /TODO.pdf
+[ssot]: https://eprint.iacr.org/2022/192
 [vith_crypto]: https://eprint.iacr.org/2023/TODO
 [vith_crypto_impl]: https://github.com/lenerd/homcomzk

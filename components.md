@@ -25,6 +25,6 @@ Ingredients for the FAEST:
 
 4. A pinch of salt
 
-	Until this point, the verifier still keeps a secret state - namely its choice bits to the Oblivious Transfers. Therefore, FAEST replaces the ROTs in SoftSpokenVOLE with [hash-based commitments][commit_extend] and applies the Fiat-Shamir transform to turn the ZK proof into a signature scheme. This use of hash-based commitments instead of ROT reveals the verifier's share of the VOLE correlation to the prover when commitments are chosen to be opened. Since at this point all QuickSilver proof messages have been sent this does not affect security.
+	Until this point, the verifier still keeps a secret state - namely its choice bits to the oblivious transfers. Therefore, FAEST replaces the ROTs in SoftSpokenVOLE with [hash-based commitments][commit_extend] and applies the Fiat-Shamir transform to turn the ZK proof into a signature scheme. This use of hash-based commitments instead of ROT reveals the verifier's share of the VOLE correlation to the prover when commitments are chosen to be opened. Since at this point all QuickSilver proof messages have been sent this does not affect security.
 
 {% include_relative references.md %}

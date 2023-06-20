@@ -8,25 +8,44 @@ Ingredients for the FAEST:
 
 1. [AES Block Cipher][aes_spec]
 
-	To build the FAEST, we use a One-way function *f* whose output *y=f(x)* on input *x* will serve as the public verification key, while *x* plays the role of the secret signing key. In FAEST-128, one can think of the function *f* the AES-128 block cipher where the key is *x*, while *y* is a plaintext-ciphertext pair *m,c* where the plaintext is encrypted under key *x* (it technically is only a OWF if the plaintext *m* is fixed in advance). For FAEST-192 and FAEST-256 two plaintext/ciphertext pairs for the **same** key are instead used, since AES only encrypts a block of 128 bits also for larger key lengths. A signature is a Zero-Knowledge  (ZK) proof, demonstrating knowledge of the key *x*.
+	To build the FAEST, we use a one-way function defined using a block cipher.
+	A public verification key consists of a plaintext-ciphertext pair *(x, y)*, while the private signing key is the corresponding key *k* (together with the plaintext *x*).
+	In FAEST-128, the ciphertext is defined using the AES-128 block cipher as *y = AES-128(x, k)*.
+	FAEST-192 and FAEST-256 are similar, except that two plaintext/ciphertext pairs are generated for the **same** key, since AES has a block size of 128 bits even when the key is larger.
+	A signature is a zero-knowledge  (ZK) proof, demonstrating knowledge of the key *k*.
 
-	Using AES as the OWF has been done in previous signature candidates such as [BBQ](https://eprint.iacr.org/2019/781.pdf), [Banquet](https://eprint.iacr.org/2021/068.pdf) and [Limbo](https://eprint.iacr.org/2021/215). Similar to BBQ and follow-ups, FAEST exploits that the only non-linear operation of the AES cipher is the S-Box, which is an inversion over a small field (and can be efficiently proven in ZK). Similar to BBQ and Banquet, FAEST requires that the input of each S-box during key scheduling and encryption is non-zero, a requirement whose security impact has been analyzed in BBQ.
+	Using AES as the OWF has been done in previous signature candidates such as [BBQ][bbq], [Banquet][banquet] and [Limbo][limbo].
+	Similar to BBQ and follow-ups, FAEST exploits that the only non-linear operation of the AES cipher is the S-Box, which is an inversion over a small field (and can be efficiently proven in ZK).
+	This requires that the input of each S-box during key scheduling and encryption be non-zero, to avoid dividing by zero.
+	This restricts us to a subset of the possible keys, butbut the analysis in BBQ showed that this has a very minor impact on security.
 
-	FAEST can additionally use the Even-Mansour version of AES, where the key of the AES permutation is fixed in advance (to make it an ideal permutation). Then, FAEST-EM proves that it knows a key *x* such that *x XOR m*, encrypted using AES with a fixed publicly known key, yields output *c xor m*. The advantage of FAEST-EM is that the key expansion S-Boxes must not be proven in ZK since their inputs and outputs are public information. This reduces the proof and therefore signature size. For 192 and 256 bit security, FAEST-EM relies on Rijndael-192 and Rijndael-256 due to constrains of AES.
+	FAEST can additionally use AES in Even-Mansour (EM) mode, where AES is used as an ideal permutation, by revealing the AES key as part of the public key.
+	FAEST-EM proves that it knows a key *k* such that *k*, encrypted using AES with a fixed publicly known key *x*, yields output *k ⊕ y*.
+	I.e., *y = k ⊕ AES-128(k, x)*.
+	The advantage of FAEST-EM is that the key expansion need not be proven in ZK since the AES key *x* is public information.
+	This reduces the proof and therefore signature size.
+	Using EM requires the block size to match the key size, so for 192 and 256 bit security FAEST-EM uses on Rijndael-192 and Rijndael-256, the 192 and 256 bit block size versions of Rijndael.
+	(Only the 128 bit block size version of Rijndael was standardized as AES.)
 
 2. [QuickSilver ZK Proof][quicksilver]
 
-	As concrete ZK proof system, FAEST uses [QuickSilver](https://eprint.iacr.org/2021/076). QuickSilver has the advantage that the concrete proof, while linear in the circuit size of AES (proportional to the number of S-Boxes), requires very low concrete communication. Moreover, the computation necessary to generate or verify the proof is very lightweight. QuickSilver requires random Vector Oblivious Linear Evaluation (VOLE) correlations between the prover and the verifier as setup. FAEST uses the observation that the proof remains sound if the prover learns the verifier's share of the VOLE correlation after it sent all QuickSilver proof messages.
+	As concrete ZK proof system, FAEST uses [QuickSilver][quicksilver].
+	QuickSilver requires a random vector oblivious linear evaluation (VOLE) correlations between the prover and the verifier, to homomorphically commit to the prover to its witness.
+	Typically this VOLE correlation would come from an LPN-based preprocessing stage, which has very low communication complexity.
+	QuickSilver has the advantage that after this VOLE, the proof size is independent of the witness size.
+	Moreover, the computation necessary to generate or verify the proof is very lightweight.
+	FAEST uses the observation that the proof remains sound if the prover learns the verifier's share of the VOLE correlation after the prover sent all QuickSilver proof messages.
 
 3. [VOLE-in-the-Head][vith_crypto]
 
-	<p>
 	<img src="/assets/vith.png" alt="A vole in the head of a person" style="float:right;width:20%;">
-	QuickSilver (and other VOLE-based ZK proof systems) use an LPN-based preprocessing stage to generate the VOLE correlations between prover and verifier in a preprocessing phase. Unfortunately, it is currently not known how to instantiate these VOLE correlation generators based on LPN such that the prover's share of the VOLE correlations can be generated without a secret state of the verifier. FAEST differs from previous works by using a protocol from the [SoftSpokenVOLE](https://eprint.iacr.org/2022/192) to generate VOLE correlations. SoftSpokenVOLE achieves this using Random Oblivious Transfers (ROTs) as starting point, and FAEST  modifies it such that the generated VOLE correlations have parameters for which the QuickSilver ZK proof has good soundness. Since the resulting proof system bears resemblance with MPC-in-the-Head, we call this approach VOLE-in-the-Head.
-	</p> 
+	QuickSilver (and other VOLE-based ZK proof systems) have the disadvantage of being designated verifier, as if the prover learns the verifier's share of the VOLE correlation then it can prove any statement at all.
+	With VOLE-in-the-Head, a VOLE-like correlation can instead be generated from a public-coin protocol based on [SoftSpokenVOLE][ssot], with its base oblivious transfers replaced by [hash-based commitments][commit_extend].
+	Using commitments instead of oblivious transfers reveals the verifier's share of the VOLE correlation to the prover when commitments are chosen to be opened.
+	Since at this point all QuickSilver proof messages have been sent, this does not affect security.
+	The resulting proof system bears resemblance with MPC-in-the-Head, so we call this approach VOLE-in-the-Head.
 
 4. A pinch of salt
 
-	Until this point, the verifier still keeps a secret state - namely its choice bits to the Oblivious Transfers. Therefore, FAEST replaces the ROTs in SoftSpokenVOLE with [hash-based commitments](https://eprint.iacr.org/2018/983) and applies the Fiat-Shamir transform to turn the ZK proof into a signature scheme. This use of hash-based commitments instead of ROT reveals the verifier's share of the VOLE correlation to the prover when commitments are chosen to be opened. Since at this point all QuickSilver proof messages have been sent this does not affect security. 
 
 {% include_relative references.md %}

@@ -10,7 +10,8 @@ Ingredients for the FAEST:
 
 	To build the FAEST, we use a one-way function defined using a block cipher.
 	A public verification key consists of a plaintext-ciphertext pair *(x, y)*, while the private signing key is the corresponding key *k* (together with the plaintext *x*).
-	In FAEST-128, the ciphertext is defined using the AES-128 block cipher as *y = AES-128(x, k)*.
+	In FAEST-128, the ciphertext is defined as the AES encryption of the plaintext *x* using the key *k*.
+	I.e., *y = AES-128(x, k)*.
 	FAEST-192 and FAEST-256 are similar, except that two plaintext/ciphertext pairs are generated for the **same** key, since AES has a block size of 128 bits even when the key is larger.
 	A signature is a zero-knowledge  (ZK) proof, demonstrating knowledge of the key *k*.
 

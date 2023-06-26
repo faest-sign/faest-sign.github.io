@@ -20,8 +20,8 @@ There are several parameters controlling the instantiation of FAEST, giving diff
 First there's the security parameter, which determines both the complexity of the statement to prove, and the security level of the zero knowledge proof itself.
 For 128-bit security we only need to prove AES-128 once, while for 256-bit security we need to prove AES-256 twice, as AES has a 128-bit block size.
 
-Second, we hanve a Even-Mansour variant where the block cipher is used as an ideal permutation by publishing its key, run on a secret input.
-This avoids proving the key schedule, since it is public, but when the security parameter is 192 or 256 it requires using Rijndael with larger block sizes, as only the 128-bit block size was standardized as AES.
+Second, we have an Even-Mansour variant where the block cipher is used as an ideal permutation by publishing its key, run on a secret input.
+This avoids proving the key schedule, since it is public, but when the security parameter is 192 or 256 it requires using Rijndael[rijndael-spec] with larger block sizes, as only the 128-bit block size was standardized as AES.
 
 Third, our zero-knoweldge proof admits a communication–computation tradeoff, since it is built using [SoftSpokenVOLE][ssot].
 This is controlled by a parameter *𝜏*, with communication being roughly proportional to *𝜏*.
@@ -29,7 +29,7 @@ FAEST has two settings for *𝜏* for each security level: a "**s**low and short
 
 ## Performance
 
-For 128-bit security, our optimized implementation of FAEST can sign or verify in 0.9 milliseconds (for signatures of size 6.5 kilobytes) or 8.1 milliseconds (for signatures of size 5 kilobytes). When using AES in Even–Mansour mode, signature size can be further reduced to 4.6 kilobytes. Here are the benchmarks for our [AVX2](/software.html) implementation.
+For 128-bit security, our optimized implementation of FAEST can sign or verify in 0.9 milliseconds (for signatures of size 6.5 kilobytes) or 8.1 milliseconds (for signatures of size 5 kilobytes). When using AES in Even–Mansour mode, signature size can be further reduced to 4.6 kilobytes. Here are the benchmarks for our [AVX2 implementation](/software.html).
 
 {% include_relative avx2-perf.md %}
 

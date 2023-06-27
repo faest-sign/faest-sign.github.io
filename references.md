@@ -12,5 +12,5 @@
 [spec_1_0]: /faest-spec-v1.0.pdf
 [spec_1_1]: /TODO.pdf
 [ssot]: https://eprint.iacr.org/2022/192
-[vith_crypto]: https://eprint.iacr.org/2023/TODO
-[vith_crypto_impl]: https://github.com/lenerd/homcomzk
+[vith_crypto]: https://eprint.iacr.org/2023/996
+[vith_crypto_impl]: https://github.com/faest-sign/faest-rs/tree/crypto-2023

@@ -18,4 +18,18 @@ The kitchen of this FAEST is manned by, in alphabetical order:
 - [Lawrence Roy](https://ldr709.gitlab.io/) (Aarhus University)
 - [Peter Scholl](https://pascholl.github.io/) (Aarhus University)
 
+## Acknowledgements
+
+The development of FAEST has been supported by:
+
+- Aarhus University Research Foundation
+- CyberSecurity Research Flanders with reference VR20192203
+- Defense Advanced Research Projects Agency (DARPA) under contract no. HR001120C0085
+- European Research Council (ERC) under grant agreement 803096 (SPEC)
+- FWO, through a Junior Postdoctoral Fellowship under project 1266123N
+- Helsinki Institute for Information Technology (HIIT)
+- Independent Research Fund Denmark under project number
+0165-00107B (C3PO)
+- KASTEL Security Research Labs
+
 {% include_relative references.md %}

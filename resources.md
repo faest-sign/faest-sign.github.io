@@ -11,6 +11,7 @@ subtitle: "Documents"
     They listed the same times for signature and verification due to a bug in the script; signing time was reported faster (or sometimes slower) than real timings.
   - Corrected author order on front page.
   - Corrected description and security proofs for the one-way functions.
+  - Revised security estimates for the one-way functions.
 - [v1.0][spec_1_0] was included in our round 1 submission to NIST.
 
 ### Submission

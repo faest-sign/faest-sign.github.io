@@ -23,11 +23,14 @@ The kitchen of this FAEST is manned by, in alphabetical order:
 The development of FAEST has been supported by:
 
 - Aarhus University Research Foundation
+- COMET - Competence Centers for Excellent Technologies Programme, managed by FFG
 - CyberSecurity Research Flanders with reference VR20192203
 - Defense Advanced Research Projects Agency (DARPA) under contract no. HR001120C0085
-- European Research Council (ERC) under grant agreement 803096 (SPEC)
+- Digital Europe Program under grant agreement number 101091642 ("QCI-CAT")
+- European Research Council (ERC) under grant agreement number 803096 (SPEC)
 - FWO, through a Junior Postdoctoral Fellowship under project 1266123N
 - Helsinki Institute for Information Technology (HIIT)
+- Horizon Europe Program under grant agreement number 101096435 (“CONFIDENTIAL6G")
 - Independent Research Fund Denmark under project number
 0165-00107B (C3PO)
 - KASTEL Security Research Labs

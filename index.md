@@ -17,7 +17,7 @@ First there's the security parameter, which determines the overall security leve
 FAEST offers 3 different security levels, corresponding roughly to AES-128, AES-192 or AES-256.
 
 Second, we have an Even-Mansour variant, where a block cipher is used as an ideal permutation by publishing its key, run on a secret input.
-This simplifies proving the key schedule in zero-knowledge, since it is public, but when the security parameter is 192 or 256 it requires using Rijndael[rijndael-spec] with larger block sizes, as only the 128-bit block size was standardized as AES.
+This simplifies proving the key schedule in zero-knowledge, since it is public, but when the security parameter is 192 or 256 it requires using [Rijndael][rijndael-spec] with larger block sizes, as only the 128-bit block size was standardized as AES.
 
 Third, our zero-knoweldge proof admits a communication–computation tradeoff, since it is built using [SoftSpokenVOLE][ssot].
 This is controlled by a parameter *𝜏*, with communication being roughly proportional to *𝜏*.

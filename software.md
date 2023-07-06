@@ -12,11 +12,11 @@ The computer was running Linux 6.1.30, and the implementations were compiled wit
 
 Reference [implementation][faest_ref_impl]:
 
-{% include_relative ref-perf.md %}
+{% include_relative ref-perf.html %}
 
 x86-64 [implementation][faest_avx_impl] with AVX2, AES-NI, and other ISA extensions:
 
-{% include_relative avx2-perf.md %}
+{% include_relative avx2-perf.html %}
 
 ## Rust
 

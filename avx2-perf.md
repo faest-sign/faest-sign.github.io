@@ -1,6 +1,7 @@
 {% comment %}
    START GENERATED TABLE
 {% endcomment %}
+
 |---
 | : Scheme : |  : Runtimes in milliseconds :  \|\||  : Sizes in bytes :  \|\|
 | ^^         | : KeyGen : | : Sign : | : Verify : | : sk : | : pk : | : sig :

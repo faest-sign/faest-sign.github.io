@@ -10,6 +10,7 @@ baseurl: "/"
 url: "https://faest-sign.github.io"
 github_username: faest-sign
 repository: faest-sign/faest-sign.github.io
+markdown: kramdown
 
 # Pages in the navigation bar, in order:
 header_pages:

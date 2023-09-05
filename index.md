@@ -31,6 +31,6 @@ For 128-bit security, our optimized implementation of FAEST can sign or verify i
 
 ## Contact
 
-If you want to contact us, please send an e-mail to [faest.authors@gmail.com](mailto://faest.authors@gmail.com)
+If you want to contact us, please send an e-mail to [team@faest.info](mailto://team@faest.info)
 
 {% include_relative references.md %}

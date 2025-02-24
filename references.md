@@ -10,7 +10,7 @@
 [quicksilver]: https://eprint.iacr.org/2021/076
 [rijndael-spec]: https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/aes-development/rijndael-ammended.pdf
 [submission_1]: https://github.com/faest-sign/faest-sign.github.io/releases/download/v1.0/nist-submission-v1.zip
-[submission_2]: https://github.com/faest-sign/faest-sign.github.io/releases/download/v2.0/nist-submission-v2.zip
+[submission_2]: https://drive.google.com/file/d/1FOaJnWGTFt3emPYz2Oz_gEBZ1PBdMx1z/view
 [sha3_spec]: https://doi.org/10.6028/NIST.FIPS.202
 [spec_1_0]: /faest-spec-v1.0.pdf
 [spec_1_1]: /faest-spec-v1.1.pdf

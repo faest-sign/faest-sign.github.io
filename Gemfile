@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
-gem "github-pages", "~> 228", group: :jekyll_plugins
+# gem "github-pages", "~> 232", group: :jekyll_plugins
 
-gem "jekyll", "~> 3.9.3"
+gem "jekyll", "~> 4.4.1"
 #gem "kramdown-parser-gfm", "~> 1.1"
 # required for jekyll >= 3
-gem "webrick", "~> 1.7"
+# gem "webrick", "~> 1.9"
 gem "minima"
 
-gem "jekyll-spaceship", group: :jekyll_plugins
+group :jekyll_plugins do
+  gem "jekyll-sitemap"
+  gem "jekyll-spaceship"
+end

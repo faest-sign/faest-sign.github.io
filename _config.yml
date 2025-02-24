@@ -24,3 +24,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-spaceship
+
+sass:
+  quiet_deps: true

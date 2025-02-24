@@ -7,7 +7,7 @@ address: Europe, Earth
 description: >-
   The FAEST digital signature algorithm
 baseurl: "/"
-url: "https://faest-sign.github.io"
+url: "https://faest.info"
 github_username: faest-sign
 repository: faest-sign/faest-sign.github.io
 markdown: kramdown

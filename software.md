@@ -4,23 +4,31 @@ title: "Dishes"
 subtitle: "Software"
 ---
 
-## C
 
-The benchmark numbers below were collected on a consumer notebook with an AMD Ryzen 7 5800H processor, with a base clock speed of 3.2 GHz and 16 GB memory.
-Simultaneous Multi-Threading and Precision Boost were enabled.
-The computer was running Linux 6.1.30, and the implementations were compiled with GCC 12.2.1.
+## Optimized C++ Implementation
 
-Reference [implementation][faest_ref_impl]:
+The [optimized x86-64 implementation][faest_avx_impl] uses AVX2, AES-NI, and other ISA extensions.
 
-{% include_relative ref-perf.html %}
+We measured the performance using a single core of a workstation running a AMD Zen 3 Ryzen 9 5950X
+processor at 3.4 GHz (with clock boosting disabled) and 128 GiB memory. The system was otherwise
+idle (load average 0.01), so while Simultaneous Multi-Threading was enabled it likely did not affect
+the results significantly. Each individual test can be run with memory usage below 19 MiB.  The
+computer was running Linux 6.6.40, and the implementations were built with GCC 14.1.1.
 
-x86-64 [implementation][faest_avx_impl] with AVX2, AES-NI, and other ISA extensions:
+{% include_relative avx2-perf.md %}
 
-{% include_relative avx2-perf.html %}
+## Reference C Implementation
 
-## Rust
+The [reference implementation][faest_ref_impl] is slower than the optimized implementation above,
+but follows the algorithms given in the specification more closely.
 
-- [Implementation][vith_crypto_impl] for our Crypto 2023 [paper][vith_crypto].
+
+## Old Implementations
+
+- [x86-64 C implementation][faest_avx_impl_v1] with AVX2, AES-NI, and other ISA extensions for the NIST Round 1 submission.
+  Superceded by the C++ version above.
+
+- [Initial Rust implementation][vith_crypto_impl] for our Crypto 2023 [paper][vith_crypto].
   Note that this is for an older version of our protocol, which uses different primitives and is incompatible with the specification.
 
 {% include_relative references.md %}

@@ -6,7 +6,10 @@ subtitle: "Documents"
 
 ### Specification
 
-- [v2.0][spec_2_0] was included in our Round 2 submission to NIST.
+- [v2.0][spec_2_0] was included in our Round 2 submission to NIST. The main changes are:
+  - Improved batch vector commitments, with smaller opening size and faster AES-based leaf commitments.
+  - Uses degree-3 constraints to prove AES in zero-knowledge, further reducing signature size.
+  - Improved security analysis, including a tight QROM proof.
 - [v1.1][spec_1_1] covers the same protocol, but fixes some issues with the document:
   - Corrected performance tables.
     They listed the same times for signature and verification due to a bug in the script; signing time was reported faster (or sometimes slower) than real timings.

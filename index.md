@@ -25,7 +25,7 @@ FAEST has two settings for *𝜏* for each security level: a "**s**low and short
 
 ## Performance
 
-For 128-bit security, our optimized implementation of FAEST can sign or verify in 0.9 milliseconds (for signatures of size 6.5 kilobytes) or 8.1 milliseconds (for signatures of size 5 kilobytes). When using AES in Even–Mansour mode, signature size can be further reduced to 4.6 kilobytes. Here are the benchmarks for our [AVX2 implementation](/software.html).
+For 128-bit security, our optimized implementation of FAEST can sign or verify in 1.7M cycles (for signatures of size 5.9 kilobytes) or 12.8M cycles (for signatures of size 4.5 kilobytes). When using AES in Even–Mansour mode, signature size can be further reduced to 3.9 kilobytes. Here are the benchmarks for our [AVX2 implementation](/software.html).
 
 {% include_relative avx2-perf.md %}
 

@@ -2,8 +2,8 @@
 [banquet]: https://eprint.iacr.org/2021/068
 [bbq]: https://eprint.iacr.org/2019/781
 [commit_extend]: https://eprint.iacr.org/2018/983
-[faest_avx_impl]: https://github.com/faest-sign/faest-avx
-[faest_avx_impl_v1]: https://github.com/faest-sign/faest-avx/tree/release/
+[faest_arch_opt_impl]: https://github.com/faest-sign/faest-arch-opt
+[faest_avx_impl_v1]: https://github.com/faest-sign/faest-arch-opt/tree/release/
 [faest_ref_impl]: https://github.com/faest-sign/faest-ref
 [limbo]: https://eprint.iacr.org/2021/215
 [picnic]: https://github.com/Microsoft/Picnic/

@@ -7,7 +7,10 @@ subtitle: "Software"
 
 ## Optimized C++ Implementation
 
-The [optimized x86-64 implementation][faest_avx_impl] uses AVX2, AES-NI, and other ISA extensions.
+The [optimized x86-64 implementation][faest_arch_opt_impl] supports x86-64 and aarch64 and uses ISA
+extensions to accelerate AES and other operations.
+
+### x86-64 (with AVX2 and AES-NI)
 
 We measured the performance using a single core of a workstation running a AMD Zen 3 Ryzen 9 5950X
 processor at 3.4 GHz (with clock boosting disabled) and 128 GiB memory. The system was otherwise
@@ -16,6 +19,12 @@ the results significantly. Each individual test can be run with memory usage bel
 computer was running Linux 6.6.40, and the implementations were built with GCC 14.1.1.
 
 {% include_relative avx2-perf.md %}
+
+### AArch64 (with AES)
+
+For ARM, we benchmarked on a Macbook Pro with an Apple M1 processor at up to 3.2 GHz.
+
+{% include_relative aarch64-perf.md %}
 
 ## Reference C Implementation
 

@@ -8,7 +8,7 @@ The kitchen of this FAEST is manned by, in alphabetical order:
 
 - [Carsten Baum](https://carstenbaum.com/) (Technical University of Denmark)
 - Ward Beullens (IBM Research Europe)
-- Lennart Braun (Université Paris Cité, CNRS, IRIF)
+- [Lennart Braun](https://lennartbraun.de/) (Université Paris Cité, CNRS, IRIF)
 - [Cyprien Delpech de Saint Guilhem](https://www.esat.kuleuven.be/cosic/people/cyprien-delpech-de-saint-guilhem/) (3MI Labs, KU Leuven)
 - Michael Klooß (ETH Zurich)
 - [Christian Majenz](https://www.christianmajenz.info/) (Technical University of Denmark)

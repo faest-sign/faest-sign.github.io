@@ -7,7 +7,7 @@ subtitle: "Software"
 
 ## Optimized C++ Implementation
 
-The [optimized x86-64 implementation][faest_arch_opt_impl] supports x86-64 and aarch64 and uses ISA
+The [optimized architecture-specific implementation][faest_arch_opt_impl] supports x86-64 and aarch64 and uses ISA
 extensions to accelerate AES and other operations.
 
 ### x86-64 (with AVX2 and AES-NI)

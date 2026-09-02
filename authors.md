@@ -35,5 +35,6 @@ The development of FAEST has been supported by:
 - Horizon Europe Program under grant agreement number 101096435 (“CONFIDENTIAL6G")
 - Independent Research Fund Denmark under project number 0165-00107B (C3PO)
 - KASTEL Security Research Labs
+- Swiss National Science Foundation (SNSF) under the Starting grant "Low-Entropy Cryptography for the Quantum Era"
 
 {% include_relative references.md %}

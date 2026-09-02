@@ -16,7 +16,7 @@ The kitchen of this FAEST is manned by, in alphabetical order:
 - [Emmanuela Orsini](https://cseao.github.io/) (Bocconi University)
 - [Sebastian Ramacher](https://ramacher.at/) (Austrian Institute of Technology)
 - [Christian Rechberger](https://www.iaik.tugraz.at/person/christian-rechberger/) (Graz University of Technology)
-- [Lawrence Roy](https://ldr709.gitlab.io/) (IBM Research Zurich)
+- [Lawrence Roy](https://ldr709.gitlab.io/) (IBM Research Europe)
 - [Peter Scholl](https://pascholl.github.io/) (Aarhus University)
 
 ## Acknowledgements

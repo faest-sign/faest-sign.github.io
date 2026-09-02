@@ -12,11 +12,9 @@ extensions to accelerate AES and other operations.
 
 ### x86-64 (with AVX2 and AES-NI)
 
-We measured the performance using a single core of a workstation running a AMD Zen 3 Ryzen 9 5950X
-processor at 3.4 GHz (with clock boosting disabled) and 128 GiB memory. The system was otherwise
-idle (load average 0.01), so while Simultaneous Multi-Threading was enabled it likely did not affect
-the results significantly. Each individual test can be run with memory usage below 19 MiB.  The
-computer was running Linux 6.6.40, and the implementations were built with GCC 14.1.1.
+We measured the performance using a single core of a notebook with an Intel Core Ultra 9 285H
+processor of the Arrow Lake family running Linux 7.1.9. We compile with GCC 16.2.1 and pin the
+benchmark to a performance core with up to 5.4 GHz.
 
 {% include_relative avx2-perf.md %}
 

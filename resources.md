@@ -6,6 +6,12 @@ subtitle: "Documents"
 
 ### Specification
 
+- [v3.0][spec_3_0] was included in our Round 3 submission to NIST. The main changes are:
+  - New method for committing to λ-bit VOLE masks used to mask the QuickSilver check based on the
+    Chinese remainder theorem; reducing the signature size.
+  - Proof of AES with degree-7 constraints and a meet-in-the-middle strategy, leading to smaller
+    witness and signature size.
+  - New VOLEHash check over F<sub>2<sup>λ</sup></sub> based on the KOS OT extension consistency check.
 - [v2.0][spec_2_0] was included in our Round 2 submission to NIST. The main changes are:
   - Improved batch vector commitments, with smaller opening size and faster AES-based leaf commitments.
   - Uses degree-3 constraints to prove AES in zero-knowledge, further reducing signature size.
@@ -20,11 +26,13 @@ subtitle: "Documents"
 
 ### Submission
 
+- [NIST Round 3 submission][submission_3] (37 MB; includes specification, source code and test vectors).
 - [NIST Round 2 submission][submission_2] (49 MB; includes specification, source code and test vectors).
 - [NIST Round 1 submission][submission_1] (29.5 MB; includes specification, source code and test vectors).
 
 ### Papers
 
-- Our [Crypto 2023 paper][vith_crypto] on VOLE-in-the-head.
+- Our [Crypto 2025 paper][vith_crypto25] on VOLE-in-the-Head signatures.
+- Our [Crypto 2023 paper][vith_crypto] on VOLE-in-the-Head.
 
 {% include_relative references.md %}

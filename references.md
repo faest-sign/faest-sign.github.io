@@ -11,10 +11,13 @@
 [rijndael-spec]: https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/aes-development/rijndael-ammended.pdf
 [submission_1]: https://github.com/faest-sign/faest-sign.github.io/releases/download/v1.0/nist-submission-v1.zip
 [submission_2]: https://drive.google.com/file/d/1QlRCloTOLvlvv7ILLY7wUdoVSK7hvroq/view
+[submission_3]: https://drive.google.com/file/d/1Gdah9nO48yoculepTMHIvy8p_8UTjkyo/view
 [sha3_spec]: https://doi.org/10.6028/NIST.FIPS.202
 [spec_1_0]: /faest-spec-v1.0.pdf
 [spec_1_1]: /faest-spec-v1.1.pdf
 [spec_2_0]: /faest-spec-v2.0.pdf
+[spec_3_0]: /faest-spec-v3.0.pdf
 [ssot]: https://eprint.iacr.org/2022/192
 [vith_crypto]: https://eprint.iacr.org/2023/996
 [vith_crypto_impl]: https://github.com/faest-sign/faest-rs/tree/crypto-2023
+[vith_crypto25]: https://eprint.iacr.org/2026/164
